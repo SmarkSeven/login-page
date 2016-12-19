@@ -1,0 +1,43 @@
+$font_size: 72px;
+@function rem($pixels) {
+    @return $pixels / $font_size+rem;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: rem(90px);
+    background: rgb(95, 192, 205);
+    color: white;
+    span {
+        height: 100%;
+        width: rem(120px);
+        padding: 0 rem(30px);
+        line-height: rem(90px);
+        text-align: center;
+        font-size: 30px;
+        display: line-block;
+    }
+    .header-sign {
+        float: right;
+        box-sizing: border-box;
+    }
+}
+
+.header-title {
+    position: absolute;
+    top: 0;
+    left: rem(120px);
+    right: rem(120px);
+    text-align: center;
+    line-height: rem(90px);
+    font-size: 32px;
+}
