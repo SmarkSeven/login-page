@@ -9,6 +9,7 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
+    background: rgb(239, 240, 244);
 }
 
 header {
@@ -24,11 +25,14 @@ header {
         line-height: rem(90px);
         text-align: center;
         font-size: 30px;
-        display: line-block;
+        display: block;
+        box-sizing: border-box;
+    }
+    .header-close {
+        float: left;
     }
     .header-sign {
         float: right;
-        box-sizing: border-box;
     }
 }
 
@@ -40,4 +44,45 @@ header {
     text-align: center;
     line-height: rem(90px);
     font-size: 32px;
+}
+
+main {
+    width: 100%;
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+    input {
+        width: 100%;
+        display: block;
+        height: rem(100px);
+        border: 0px;
+        font-size: 30px;
+    }
+    input[type='text'] {
+        text-indent: rem(150px);
+    }
+    .login-phone {
+        background: url('../images/task4_03.png') rem(40px) rem(32px) no-repeat, url('../images/task4_04.png') rem(110px) rem(25px) no-repeat;
+        background-color: white;
+    }
+    .login-password {
+        margin-top: rem(20px);
+        margin-bottom: rem(65px);
+        background: url('../images/task4_06.png') rem(40px) rem(32px) no-repeat, url('../images/task4_04.png') rem(110px) rem(25px) no-repeat;
+        background-color: white;
+    }
+    .btn-login {
+        height: rem(85px);
+        background: rgb(95, 192, 205);
+        color: white;
+        letter-spacing: rem(8px);
+    }
+}
+
+footer {
+    span {
+        float: right;
+        margin-right: rem(35px);
+        color: rgb(95, 192, 205);
+        font-size: 30px;
+    }
 }
